@@ -19,7 +19,7 @@ const WebtoonList = ({ webtoons, setSelectedWebtoon, fetchWebtoons }) => {
           <li key={webtoon._id}>
             <h3>{webtoon.title}</h3>
            
-            <img className="im" src={webtoon.image_url} alt={webtoon.title} />
+            <img className="im" src={webtoon.image_url} alt={webtoon.title} loading="lazy"/>
             <p>{webtoon.description}</p>
           </li>
         ))}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import WebtoonList from './components/WebtoonList';
-
+import VoteComponent from './components/VoteComponent';
 const App = () => {
   const [webtoons, setWebtoons] = useState([]);
 
@@ -22,6 +22,7 @@ const App = () => {
     <div>
       <h1>Webtoons</h1>
       <WebtoonList webtoons={webtoons} fetchWebtoons={fetchWebtoons} />
+      <VoteComponent />
     </div>
   );
 };
